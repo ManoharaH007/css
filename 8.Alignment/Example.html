@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            border-radius: 5px;
+
+        }
+        .container{
+            width: 600px;
+            border-top: 3px solid green;
+            border-bottom: 3px green;
+            margin-top: 50px;
+            margin-left:350px;
+
+        }
+        .item{
+            border: 1px solid red;
+            margin-left: 25px;
+            padding-left: 25px;
+            background-color: aqua;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            font-weight: bold;
+            width: 250px;
+        }
+        #fruits1{
+            float: right;
+            width: 600px;
+            
+        
+            margin-top: 15px;
+        }
+        #fruits2{
+            float: left;
+            width: 250px;
+            height: 250px;
+            text-align: left;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+        #fruits3{
+            float: left;
+            width: 250px;
+            height: 250px;
+            margin-top: 15px;
+            clear: right;
+        }
+        p,h3{
+            text-align: left;
+            text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div id="fruits1" class="item">
+        <h3>Apple</h3>
+        <p id="Cmp1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati soluta eius autem cumque velit odio consequuntur fugiat, impedit recusandae, maxime explicabo assumenda quae non aperiam libero, in amet? Minus, reiciendis.</p>
+    </div>
+    <div id="fruits2" class="item">
+        <h3>ornage</h3>
+        <p id="Cmp2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum enim facere cupiditate minus animi reiciendis delectus vero deleniti nostrum neque laborum voluptates, ipsum nesciunt provident temporibus iure suscipit voluptate quo?</p>
+    </div>
+    <div id="fruits3" class="item">
+        <h3>Banana</h3>
+        <p id="Cmp3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eum, quo aliquid cumque laborum deleniti fugit dolores aliquam, rerum natus temporibus suscipit et. Dolorem laboriosam qui eum corrupti praesentium autem?</p>
+    </div>
+  </div>
+</body>
+</html>

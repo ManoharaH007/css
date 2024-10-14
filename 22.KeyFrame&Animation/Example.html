@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+     .container{
+        background-color: greenyellow;
+     }
+     .box{
+        background-color: red;
+        width:250px;
+        height: 250px;
+        position: relative;
+        animation-name:manu2;
+        /* animation-name:manu1; */
+        animation-duration: 2s;
+        animation-iteration-count: 3;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-duration: 3s;
+        animation-direction:reverse;
+
+        /* short-end */
+        animation:manu2 ease-in 1s 12 backwards;
+     }
+
+     @keyframes manu2 {
+        0%{
+            top:0px;
+            left:0px;
+
+        }
+        25%{
+              top:250px;
+              left:0px;
+        }
+        75%{
+            top:250px;
+            left:250px;
+        }
+        100%{
+            top:0px;
+            left:250px;
+
+        }
+        
+     }
+     @keyframes manu1 {
+        from{
+      width:200px;
+        }
+        to{
+         width: 800px;
+        }
+        
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is Box
+        </div>
+    </div>
+</body>
+</html>

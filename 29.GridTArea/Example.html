@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+             grid-template-areas:'navbar navbar navbar navbar' 
+             'section section section aside'
+             'footer footer footer footer';
+
+        }
+        .box{
+            background-color: yellow;
+            border: 3px solid red;
+        }
+        #navbar{
+            margin: 0;
+            padding: 0;
+
+           grid-area: navabar; 
+           position:absolute;
+           padding: 23px;
+           width: 95%;
+           /* text-align: center; */
+           justify-self: center;
+        }
+        #section{
+            grid-area: section; 
+          
+    margin: 60px 0px 0px 0px;
+}
+        
+        #aside{
+            grid-area: aside; 
+            margin: 60px 0px;
+          height: 25vh;
+
+        }
+#footer{
+    grid-area: footer;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="box">
+            Home About Contact Us
+        </div>
+        <div id="section"class="box">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id unde dolor deleniti cumque saepe et, ipsum accusantium, reprehenderit numquam, culpa commodi labore! Minima!
+        </div>
+        <div id="aside"class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolore consectetur ad! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quasi, ullam consequuntur quis laborum culpa quia ipsum necessitatibus impedit error dolor ipsam rerum beatae consectetur dolorem doloremque quod non ea?
+        </div>
+        <footer id="footer" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam reprehenderit autem dolorem illo obcaecati, molestiae veritatis nobis error quisquam omnis nisi rerum maxime alias sapiente! Unde cumque, porro possimus iste ad recusandae quae error molestias nulla accusantium voluptatum quisquam.</footer>
+        <!-- <div class="box">item-1</div>
+        <div class="box">item-2</div>
+        <div class="box">item-3</div>
+        <div class="box">item-4</div>
+        <div class="box">item-5</div>
+        <div class="box">item-6</div>
+        <div class="box">item-7</div>
+        <div class="box">item-8</div> -->
+    </div>
+    
+</body>
+</html>

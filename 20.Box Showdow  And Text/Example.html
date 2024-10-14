@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <style>
+     .container{
+        display: flex;
+     }
+     .card{
+        padding:23px 12px;
+        margin:23px 12px;
+        /* border:2px solid red; */
+        /* outset */
+        box-shadow: 10px 12px  10px 34px rgba(71,0.6,10, 20)      ;
+        background-color:bisque;
+
+        /* inset Box-shadow */
+        box-shadow: inset 3px 5px green;
+ }
+
+        /* text-shadow */
+  .card h1{
+    text-shadow: 3px 4px white;
+ }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="car-1"><h1>This is Java Course</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatem autem sit culpa adipisci est dolorum officiis voluptas porro sunt, a, dignissimos labore repellat fugiat reiciendis officia pariatur. Beatae, earum.</p>
+        </div>
+        <div class="card" id="car-2"><h1>This Is Spring Boot </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel perferendis ad voluptatem molestiae cumque sunt unde voluptatibus sequi minus, fugit modi praesentium necessitatibus saepe! Id mollitia voluptates inventore ut laboriosam?</p>
+        </div>
+        <div class="card" id="car-3"><h1>This Is React Js </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam, neque libero est, velit suscipit consectetur ipsa magni ipsum reprehenderit itaque maiores natus autem minima repudiandae rem aut maxime quo!</p>
+        </div>
+    </div>
+</body>
+</html>

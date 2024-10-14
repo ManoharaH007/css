@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex BOx</title>
+</head>
+<style>
+    /* flexbox box poperties of container */
+    .container{
+        height:344px;
+        width:100%;
+        border:2px solid black;
+        display: flex;
+        /* Flex Properties */
+        /* flex-direction: row; */
+        /* flex-direction: column;
+        flex-direction: column-reverse; */
+
+        flex-wrap:nowrap; 
+        /* flex-wrap: wrap-reverse; */
+        /* flex-flow: row-reverse wrap; */
+         /* justify-content: center;  */
+        /* justify-content: space-between; */
+         /* justify-content: space-evenly;  */
+         /* justify-content: space-around; */
+         
+         /* align-items: center;
+         align-items: flex-end;
+         align-items: flex-start; */
+         /* flex-direction: column; */
+    }
+    .item {
+        background-color: brown;
+        border:2px solid rebeccapurple;
+        margin:10px;
+        padding: 2px;
+        width:150px;
+        height: 150px;
+    }
+#item-1{
+    /* Flex properties for a flex item */
+    /* order:2;
+    flex-grow: 3;
+    flex-shrink: 3; */
+}
+#item-2{
+    /* flex-shrink: 3; */
+    flex-basis: 300px;
+    align-self: start;
+    align-self: center;
+    align-self: self-end;
+}
+#item-3{
+    order:4;
+    flex: 2 2 366px;
+}
+</style>
+<body>
+    <h2>Hello Im Manohara</h2>
+    <div class="container">
+    <div class="item" id="item-1">First Box1</div>
+    <div class="item" id="item-2">Second Box2</div>
+    <div class="item" id="item-3">Third Box 3</div>
+    <!-- <div class="item" id="item-4">Fourth Box 4</div>
+    <div class="item" id="item-5">Fifth Box 5</div>
+    <div class="item" id="item-6">Sixth Box6</div> -->
+</div>
+</body>
+</html>

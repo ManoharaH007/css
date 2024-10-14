@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Media    
+    </title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:'navbar navbar navbar navbar' 
+             'section section section aside'
+             'footer footer footer footer';
+
+    }
+    span{
+        display: block;
+        text-align: center;
+    }
+    .box{
+            background-color: yellow;
+            border: 3px solid red;
+        }
+        nav{
+            margin: 0;
+            padding: 0;
+
+           grid-area: navabar; 
+           position:absolute;
+           padding: 23px;
+           width: 95%;
+           /* text-align: center; */
+           justify-self: center;
+        }
+        section{
+            grid-area: section; 
+          
+    margin: 60px 0px 0px 0px;
+}
+        
+        aside{
+            grid-area: aside; 
+            margin: 60px 0px;
+          height: 25vh;
+
+        }
+footer{
+    grid-area: footer;
+    text-align: 'center';
+   
+    background-color: brown;
+}
+    @media only screen and (min-width:300px){
+ body{
+background-color: burlywood;
+ }
+}
+ @media only screen and (min-width:300px) and (max-width:500px){
+ body{
+background-color: aqua;
+ }
+ .container{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:'navbar navbar navbar navbar' 
+             'section section section '
+             'footer footer footer footer';
+
+    }
+    span{
+        display: block;
+        text-align: center;
+    }
+    aside{
+        display: none;
+    }
+}
+@media only screen and (min-width:500px) and (max-width:800px){
+ body{
+background-color: red;
+
+ }
+ .container{
+      
+        grid-template-areas:'navbar navbar navbar navbar' 
+             'section section section  section'
+              'aside aside aside aside'
+             'footer footer footer footer';
+ }
+}
+@media only screen and (min-width:800px){
+ body{
+background-color: yellow;
+ }
+ span{
+        display: block;
+        text-align: center;
+    }
+}
+.brd-now{
+    border: 2px solid black;
+    padding: 23px;
+    background: white;
+}
+</style>
+<body>
+    <div class="container">
+        <nav class="brd-now">
+          <span>Home</span>
+          <span>About</span>
+          <span>Contact</span>
+          <span>ReadMore</span>
+        </nav>
+        <section class="brd-now">
+            <h2>learn css in hindi</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi impedit deserunt, ea, quas quos reprehenderit cumque vitae quae velit quod sapiente inventore explicabo molestiae aut, praesentium ab beatae libero nesciunt!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quod atque dignissimos repudiandae sapiente odit beatae id, nihil culpa possimus fugit sed voluptatibus non, enim blanditiis alias suscipit, fugiat laboriosam.
+            </p>
+        </section>
+        <aside class="brd-now">
+       <h1 >More about us</h1>
+        </aside>
+    </div>
+   <footer id="footer">Copyright CodeWithHarry</footer>
+    
+</body>
+</html>
